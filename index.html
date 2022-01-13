@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--script type = "text/javascript" src="scrip.js"></!--script> --> 
+    
     <title>Agenda</title>
 </head>
 <body>
     <h1>Agenda</h1>
 
-    <form>
-    <input type="text" autocomplete="off">
+    <form id="ourForm">
+    <input id="ourField" type="text" autocomplete="off">
     <button>Crear item</button>
     </form>
 
     <h3>Tengo Que Hacer</h3>
-    
+    <ul id="ourList">
+        <li>Pasear al perro  <button>borrar</button></li>
+        <li>Comprar manzanas <button>borrar</button></li>
+        <li>Sacar plata      <button>borrar</button></li>
+
+    </ul>
+
+    <script src="script.js"></script>
 </body>
 </html>
