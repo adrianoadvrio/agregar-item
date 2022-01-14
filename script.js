@@ -9,7 +9,12 @@ ourForm.addEventListener("submit", (e) => {
 })
 
 function createItem(x) {  // x = outField.value as a Parameter
-  
-ourList.insertAdjacentHTML("beforeend", x)
-
+  let outHTML = `<li>${x}<button onclick = "deleteItem(this)">borrar</button></li>`
+ourList.insertAdjacentHTML("beforeend", outHTML)
+ourField.value = ""
+ourField.focus()
 }
+
+function deleteItem(elementToDelete){
+elementToDelete.parentElement.remove()
+} 
